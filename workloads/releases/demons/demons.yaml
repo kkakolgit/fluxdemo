@@ -1,0 +1,15 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: fluxdemo
+  namespace: demons
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: demons-prod
+  chart:
+    git: git@github.com:kkakolgit/fluxdemo
+    path: charts/demons
+    ref: master
+  values:
