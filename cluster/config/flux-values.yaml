@@ -1,0 +1,13 @@
+rbac:
+  create: true
+git:
+  secretName: flux-ssh-deploy-key
+  url: ssh://git@github.com:kkakolgit/fluxdemo.git
+  branch: master
+  pollInterval: 2m
+  path: workloads
+registry:
+  automationInterval: 2m
+  ecr:
+    region: "eu-west-1"
+    includeId: "843507721200"
