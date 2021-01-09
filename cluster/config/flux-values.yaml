@@ -2,7 +2,7 @@ rbac:
   create: true
 git:
   secretName: flux-ssh-deploy-key
-  url: ssh://git@github.com:kkakolgit/fluxdemo.git
+  url: ssh://git@github.com/kkakolgit/fluxdemo.git
   branch: master
   pollInterval: 2m
   path: workloads
