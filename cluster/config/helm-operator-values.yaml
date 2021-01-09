@@ -1,0 +1,13 @@
+helm:
+  versions: "v3"
+git:
+  ssh:
+    secretName: flux-ssh-deploy-key
+configureRepositories:
+  enable: true
+  repositories:
+    - name: stable
+      url: "https://kubernetes-charts.storage.googleapis.com"
+    - name: incubator
+      url: "https://kubernetes-charts-incubator.storage.googleapis.com"
+
